@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}  
+}
 
 .flex {
     display: flex;
+}
+
+.dashed-border {
+    border: 1px dashed black;
 }
 
 header {
@@ -19,9 +23,10 @@ header {
     background-color: orange;
     width: 80%;
     justify-content: space-between;
-    margin:  3% auto;
+    margin: 3% auto;
     vertical-align: middle;
 }
+
 .headbar .logo {
     min-width: 20%;
 }
@@ -37,42 +42,93 @@ header {
 }
 
 .container {
-    min-height: 300px;
+    min-height: 350px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    width: 70%;
+    max-width: 1400px;
+    min-height: 300px;
 }
 
 .container.zero {
     background-color: blue;
-    justify-content: center;
-    align-items: center;
-
 }
 
-.intro {
+.container.zero .intro {
     background-color: pink;
     width: 50%;
     height: 250px;
 }
 
-.container.one, .three {
+.container.one,
+.three {
     background-color: antiquewhite;
 }
 
-.container.two, .four {
+.itemblue {
+    background-color: #1E90FF;
+    width: 60%;
+}
+
+.itempink {
+    background-color: #FFC0CB;
+    width: 40%;
+}
+
+.container.two,
+.four {
     background-color: gray;
 }
 
-.container.five, footer {
+.container.two .layout {
+    flex-direction: row-reverse;
+}
+
+.container.four .layout {
+    background-color: #228B22;
+    height: 500px;
+    margin: 2% 0;
+}
+
+.container.five,
+footer {
     background-color: black;
 }
 
-footer {
-    min-height: 50px;
+.container.five .layout.left {
+    background-color: #F08080;
+    width: calc((70% /6)* 2);
 }
 
+.container.five .layout.right {
+    background-color: #20B2AA;
+    width: calc((70% / 6)* 4);
+}
 
+.container.five .layout.right div {
+    width: calc(100% / 4);
+    border: dashed 1px white;
+}
 
+footer {
+    border-top: 1px solid #D6D7D7;
+    min-height: 100px;
+    justify-content: center;
+    align-items: flex-end;
+}
 
+footer .layout {
+    background-color: #20B2AA;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-
+footer .layout div {
+    background-color: #FFB6C1;
+    padding: 10px;
+}
