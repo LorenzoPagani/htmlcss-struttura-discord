@@ -14,13 +14,13 @@
 
 header {
     min-height: 100px;
-    background-color: aqua;
+    background-color: #ADD8E6;
     align-content: center;
     flex-direction: column;
 }
 
 .headbar {
-    background-color: orange;
+    background-color: #DAA520;
     width: 80%;
     justify-content: space-between;
     margin: 3% auto;
@@ -29,16 +29,19 @@ header {
 
 .headbar .logo {
     min-width: 20%;
-}
-
-.headbar .title {
-    min-width: 60%;
-    text-align: center;
+    padding: 5px;
 }
 
 .headbar .link {
+    min-width: 60%;
+    text-align: center;
+    padding: 5px;
+}
+
+.headbar .login {
     min-width: 20%;
     text-align: end;
+    padding: 5px;
 }
 
 .container {
@@ -55,18 +58,18 @@ header {
 }
 
 .container.zero {
-    background-color: blue;
+    background-color: #00008B;
 }
 
 .container.zero .intro {
-    background-color: pink;
+    background-color: #EE82EE;
     width: 50%;
     height: 250px;
 }
 
 .container.one,
 .three {
-    background-color: antiquewhite;
+    background-color: #FFFFFF;
 }
 
 .itemblue {
@@ -122,7 +125,7 @@ footer {
 }
 
 footer .layout {
-    background-color: #20B2AA;
+    background-color: #7FFFD4;
     min-height: 50px;
     justify-content: space-between;
     align-items: center;
@@ -130,5 +133,5 @@ footer .layout {
 
 footer .layout div {
     background-color: #FFB6C1;
-    padding: 10px;
+    padding: 5px;
 }
