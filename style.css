@@ -1,3 +1,5 @@
+/* Definizioni Generali */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,29 +21,12 @@ header {
     flex-direction: column;
 }
 
-.headbar {
+nav {
     background-color: #DAA520;
     width: 80%;
     justify-content: space-between;
     margin: 3% auto;
     vertical-align: middle;
-}
-
-.headbar .logo {
-    min-width: 20%;
-    padding: 5px;
-}
-
-.headbar .link {
-    min-width: 60%;
-    text-align: center;
-    padding: 5px;
-}
-
-.headbar .login {
-    min-width: 20%;
-    text-align: end;
-    padding: 5px;
 }
 
 .container {
@@ -57,18 +42,44 @@ header {
     min-height: 300px;
 }
 
-.container.zero {
+footer {
+    border-top: 1px solid #D6D7D7;
+    min-height: 100px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Definizioni Specifiche */
+
+nav .logo {
+    min-width: 20%;
+    padding: 5px;
+}
+
+nav .link {
+    min-width: 60%;
+    text-align: center;
+    padding: 5px;
+}
+
+nav .login {
+    min-width: 20%;
+    text-align: end;
+    padding: 5px;
+}
+
+.container.one {
     background-color: #00008B;
 }
 
-.container.zero .intro {
+.container.one .intro {
     background-color: #EE82EE;
     width: 50%;
     height: 250px;
 }
 
-.container.one,
-.three {
+.container.two,
+.four {
     background-color: #FFFFFF;
 }
 
@@ -82,46 +93,39 @@ header {
     width: 40%;
 }
 
-.container.two,
-.four {
+.container.three,
+.five {
     background-color: gray;
 }
 
-.container.two .layout {
+.container.three .layout {
     flex-direction: row-reverse;
 }
 
-.container.four .layout {
+.container.five .layout {
     background-color: #228B22;
     height: 500px;
     margin: 2% 0;
 }
 
-.container.five,
+.container.six,
 footer {
     background-color: black;
 }
 
-.container.five .layout.left {
+.container.six .layout.left {
     background-color: #F08080;
     width: calc((70% /6)* 2);
 }
 
-.container.five .layout.right {
+.container.six .layout.right {
     background-color: #20B2AA;
     width: calc((70% / 6)* 4);
 }
 
-.container.five .layout.right div {
+.container.six .layout.right div {
     width: calc(100% / 4);
     border: dashed 1px white;
-}
-
-footer {
-    border-top: 1px solid #D6D7D7;
-    min-height: 100px;
-    justify-content: center;
-    align-items: flex-end;
 }
 
 footer .layout {
