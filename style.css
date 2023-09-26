@@ -42,7 +42,7 @@ nav {
     min-height: 300px;
 }
 
-footer {
+.footer {
     border-top: 1px solid #D6D7D7;
     min-height: 100px;
     justify-content: center;
@@ -75,7 +75,7 @@ nav .login {
 .container.one .intro {
     background-color: #EE82EE;
     width: 50%;
-    height: 250px;
+    height: 250px;                
 }
 
 .container.two,
@@ -109,7 +109,7 @@ nav .login {
 }
 
 .container.six,
-footer {
+.footer {
     background-color: black;
 }
 
@@ -128,14 +128,14 @@ footer {
     border: dashed 1px white;
 }
 
-footer .layout {
+.footer .layout {
     background-color: #7FFFD4;
     min-height: 50px;
     justify-content: space-between;
     align-items: center;
 }
 
-footer .layout div {
+.footer .layout div {
     background-color: #FFB6C1;
     padding: 5px;
 }
